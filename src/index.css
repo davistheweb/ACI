@@ -1,1 +1,146 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 24 33% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 24 33% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 33% 14%;
+
+    --primary: 24 45% 25%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 32 15% 95%;
+    --secondary-foreground: 24 45% 25%;
+
+    --muted: 32 15% 95%;
+    --muted-foreground: 24 20% 45%;
+
+    --accent: 24 45% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 32 15% 90%;
+    --input: 32 15% 90%;
+    --ring: 24 45% 25%;
+
+    /* Church-specific design tokens */
+    --church-brown: 24 45% 25%;
+    --church-brown-light: 24 30% 40%;
+    --church-gold: 45 100% 60%;
+    --church-cream: 40 25% 97%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(24 45% 25% / 0.9),
+      hsl(24 30% 40% / 0.8)
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(var(--church-cream)),
+      hsl(0 0% 100%)
+    );
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(24 45% 25% / 0.2);
+    --shadow-warm: 0 4px 20px -5px hsl(24 45% 25% / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 24 33% 8%;
+    --foreground: 40 25% 97%;
+
+    --card: 24 33% 10%;
+    --card-foreground: 40 25% 97%;
+
+    --popover: 24 33% 10%;
+    --popover-foreground: 40 25% 97%;
+
+    --primary: 45 100% 60%;
+    --primary-foreground: 24 33% 8%;
+
+    --secondary: 24 20% 15%;
+    --secondary-foreground: 40 25% 97%;
+
+    --muted: 24 20% 15%;
+    --muted-foreground: 32 15% 70%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 24 33% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 25% 97%;
+
+    --border: 24 20% 15%;
+    --input: 24 20% 15%;
+    --ring: 45 100% 60%;
+
+    /* Dark mode church tokens */
+    --church-brown: 45 100% 60%;
+    --church-brown-light: 45 80% 70%;
+    --church-gold: 45 100% 70%;
+    --church-cream: 24 20% 15%;
+
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(24 33% 8% / 0.9),
+      hsl(24 20% 15% / 0.8)
+    );
+    --gradient-section: linear-gradient(
+      180deg,
+      hsl(24 20% 12%),
+      hsl(24 33% 8%)
+    );
+
+    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-warm: 0 4px 20px -5px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
