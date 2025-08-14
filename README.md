@@ -1,3 +1,7 @@
+ACI web project 
+
+folder structure:
+
 ```bash
 |-- .gitignore
 |-- .prettierignore
