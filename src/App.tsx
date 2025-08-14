@@ -1,5 +1,15 @@
-function App() {
-  return <div>aci</div>;
-}
+import { createBrowserRouter, RouterProvider } from "react-router";
+import { Home } from "./components/landing";
+import { PageNotFound } from "./components/PageNotFound";
 
-export default App;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <PageNotFound />,
+  },
+]);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
