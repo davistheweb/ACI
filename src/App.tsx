@@ -18,6 +18,7 @@ import {
 } from "@/pages";
 import { Layout } from "./Layout";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       <div>
         <Navbar />
         <PageNotFound />
+        <Footer />
       </div>
     ),
     children: [
