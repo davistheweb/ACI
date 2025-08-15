@@ -112,20 +112,14 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
+          <button
             className="lg:hidden relative bg-transparent hover:bg-transparent border-0 transition-all duration-300 text-gray-700 hover:text-church-brown"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <div className="relative z-10 transition-transform duration-200">
-              {isMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
             </div>
-          </Button>
+          </button>
         </div>
 
         {/* Mobile Navigation */}
