@@ -6,6 +6,7 @@ import {
   FooterNavigationItems,
   FooterSocialLinks,
 } from "@/data";
+import { Mail, MapPin, PhoneCallIcon } from "lucide-react";
 
 export const Footer: React.FC = () => (
   <footer className="relative grid md:grid-cols-2 gap-10 lg:justify-items-center lg:grid-cols-3 bg-church-brown p-5 sm:p-10 lg:p-20 text-white">
@@ -97,10 +98,20 @@ export const Footer: React.FC = () => (
         <h3 className="font-accent text-lg font-medium mb-3 text-white">
           Contact Info
         </h3>
-        <div className="space-y-2 text-gray-200 text-sm">
-          <p>📧 info@apostolicchurch.org</p>
-          <p>📞 +1 (555) 123-4567</p>
-          <p>📍 123 Faith Street, City, State 12345</p>
+        <div className="space-y-5 text-gray-200 text-sm">
+          <span className="flex gap-2 align-middle">
+            <Mail />
+            <p>info@apostolicchurch.org</p>
+          </span>
+
+          <span className="flex gap-2 align-middle">
+            <PhoneCallIcon size={20} />
+            <p>+1 (555) 123-4567</p>
+          </span>
+          <span className="flex gap-2 align-middle">
+            <MapPin />
+            <p>123 Faith Street, City, State 12345</p>
+          </span>
         </div>
       </div>
     </div>
