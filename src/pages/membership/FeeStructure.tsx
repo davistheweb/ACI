@@ -42,7 +42,7 @@ export const FeeStructure: React.FC = () => (
                 { service: "Ordination", price: "₦30,000" },
                 { service: "Apostolic Installation", price: "₦50,000" },
                 {
-                  service: "Ecclesiastic/Bishopric Adoption",
+                  service: "Episcopial adportion.",
                   price: "₦50,000*",
                 },
                 { service: "Consecration", price: "₦200,000**" },
