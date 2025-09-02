@@ -77,7 +77,7 @@ export const Application = () => {
                   </Label>
                   <Textarea
                     className="border-none text-church-brown outline-none ring-0 font-semibold rounded-s-sm resize-none"
-                    placeholder="Enter other association if any (optional)"
+                    placeholder="Enter other association if any"
                     id="other_association"
                     name="other_association"
                   />
