@@ -46,8 +46,11 @@ export const FeeStructure: React.FC = () => (
                   price: "₦50,000*",
                 },
                 { service: "Consecration", price: "₦200,000**" },
-                { service: "Bishops Consecration", price: "₦200,000**" },
-                { service: "Archbishops Enthronement", price: "₦350,000**" },
+                {
+                  service: "Bishops Consecration/Enthronement.",
+                  price: "₦200,000**",
+                },
+                { service: "Archbishops Inauguration", price: "₦350,000**" },
               ].map((fee, index) => (
                 <div
                   key={index}
@@ -84,8 +87,11 @@ export const FeeStructure: React.FC = () => (
                 { service: "Ministers", price: "£25" },
                 { service: "Ministerial License", price: "£50" },
                 { service: "Ordination", price: "£200" },
-                { service: "Bishops Consecration", price: "£500" },
-                { service: "Archbishops Enthronement", price: "£500" },
+                {
+                  service: "Bishops Consecration/Enthronement.",
+                  price: "£500",
+                },
+                { service: "Archbishops Inauguration", price: "£500" },
               ].map((fee, index) => (
                 <div
                   key={index}
