@@ -212,7 +212,7 @@ export const Application = () => {
                   </Label>
                   <Textarea
                     className="border-none text-church-brown outline-none ring-0 font-semibold rounded-s-sm"
-                    placeholder="Describe accountability"
+                    placeholder="Who is your mentor?"
                     id="accountability"
                     name="accountability"
                   />
