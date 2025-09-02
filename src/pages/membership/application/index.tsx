@@ -220,7 +220,7 @@ export const Application = () => {
 
                 <div className="flex flex-col gap-2">
                   <Label htmlFor="estimate_collection" className="font-semibold">
-                    Estimate monthly/yearly collection
+                    Estimate monthly/yearly collection (optional)
                   </Label>
                   <Input
                     className="border-none text-church-brown outline-none ring-0 text-xl font-semibold rounded-s-sm"
