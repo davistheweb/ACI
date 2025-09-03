@@ -15,10 +15,12 @@ import {
   Consecration,
   Certificates,
   Application,
+  Register
 } from "@/pages";
 import { Layout } from "./Layout";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,7 @@ const router = createBrowserRouter([
     errorElement: (
       <div>
         <Navbar />
+        <ScrollToTop />
         <PageNotFound />
         <Footer />
       </div>
@@ -43,6 +46,7 @@ const router = createBrowserRouter([
       { path: "consecration", element: <Consecration /> },
       { path: "certificates", element: <Certificates /> },
       { path: "membership/application", element: <Application /> },
+      { path: "membership/register", element: <Register /> },
     ],
   },
 ]);

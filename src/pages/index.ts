@@ -8,6 +8,7 @@ import { Events } from "./events/Events";
 import { Consecration } from "./consecration";
 import { Application } from "./membership/application";
 import { Certificates } from "./certificates";
+import { Register } from "./auth/Register";
 
 export {
   About,
@@ -20,4 +21,5 @@ export {
   Consecration,
   Certificates,
   Application,
+  Register,
 };

@@ -100,7 +100,7 @@ export const Navbar: React.FC = () => {
 
           {/* Contact Button */}
           <div className="hidden lg:flex gap-4">
-            <Link to="/register">
+            <Link to="/membership/register">
               <Button
                 // variant="churchPrimary"
                 size="sm"
@@ -182,10 +182,19 @@ export const Navbar: React.FC = () => {
               </div>
             ))}
             <div
-              className={`pt-6 animate-in slide-in-from-left duration-300 ${
+              className={`grid gap-4 pt-2 animate-in slide-in-from-left duration-300 ${
                 isMenuOpen ? "animate-delay-300" : ""
               }`}
             >
+              <Link to="/membership/register">
+                <Button
+                  // variant="churchPrimary"
+                  className="w-full relative overflow-hidden font-semibold py-3 shadow-lg transition-all duration-300 transform active:scale-95"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="relative z-10">Get Started</span>
+                </Button>
+              </Link>
               <Link to="/contact">
                 <Button
                   // variant="churchPrimary"

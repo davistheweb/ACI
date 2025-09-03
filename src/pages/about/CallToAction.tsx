@@ -13,7 +13,7 @@ export const CallToAction: React.FC = () => (
         Christian faith and discipling the nations through apostolic leadership.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Link to="/membership">
+        <Link to="/membership/register">
           <Button
             // variant="churchPrimary"
             size="lg"
