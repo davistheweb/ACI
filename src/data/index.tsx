@@ -195,12 +195,12 @@ const NavigationItems: INavItems[] = [
   { name: "About ACI", path: "/about" },
   { name: "Leadership", path: "/leadership" },
   { name: "Membership", path: "/membership" },
-  { name: "Ministries", path: "/ministries" },
   { name: "Events", path: "/events" },
   {
     name: "More",
     path: "#",
     dropdown: [
+      { name: "Ministries", path: "/ministries" },
       { name: "Consecration", path: "/consecration" },
       { name: "Certificates", path: "/certificates" },
       { name: "Education & Training", path: "/education" },

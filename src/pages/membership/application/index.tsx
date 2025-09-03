@@ -107,6 +107,7 @@ export const Application = () => {
                         className="w-4 cursor-pointer"
                         id="confirm_read_yes"
                         name="confirm_read_requisite"
+                        required
                       />
                     </span>
                     <span className="flex gap-2">
@@ -117,6 +118,7 @@ export const Application = () => {
                         className="w-4 cursor-pointer"
                         id="confirm_read_no"
                         name="confirm_read_requisite"
+                        required
                       />
                     </span>
                   </div>
@@ -189,7 +191,7 @@ export const Application = () => {
                     placeholder="e.g. 2005"
                     id="when_started"
                     name="when_started"
-                    type="text"
+                    type="date"
                   />
                 </div>
 
@@ -281,7 +283,7 @@ export const Application = () => {
                   />
                 </div>
 
-                <div className="flex gap-4 items-center">
+                <div className="flex flex-col lg:flex-row gap-4 items-center">
                   <label className="flex gap-2 items-center">
                     <input
                       id="runs_bible_college"

@@ -99,7 +99,16 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Contact Button */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex gap-4">
+            <Link to="/register">
+              <Button
+                // variant="churchPrimary"
+                size="sm"
+                className="relative overflow-hidden font-semibold px-6 py-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              >
+                <span className="relative z-10">Get Started</span>
+              </Button>
+            </Link>
             <Link to="/contact">
               <Button
                 // variant="churchPrimary"
